@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <table align="center" style="border: 15px solid darkblue;border-radius: 8%;padding-top: 2%;padding-bottom: 2%; inner">
+            <caption>
+                <h1 align="center">Create Account</h1>
+            </caption> 
+
+            <tr>
+                <td style="color: darkcyan">
+                    <label for="fname">First Name*</label>
+                </td>
+                <td style="color: darkcyan"><label for="lname">Last Name</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="fname" id="fname" required placeholder="enter your first name" />
+                </td>
+                <td>
+                    <input type="text" name="lname" id="lname" placeholder="enter your last name" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="color: darkcyan" colspan="2">
+                    <label for="email">Email*</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="email" name="email" id="email" required placeholder="enter your email" style="width: 400px;"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="color: darkcyan">
+                    <label for="password">Password*</label>
+                </td>
+                <td style="color: darkcyan">
+                    <label for="cpassword">Confirm Password*</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="password" id="password" required placeholder="enter your password" />
+                </td>
+                <td>
+                    <input type="password" name="cpassword" id="cpassword" required
+                        placeholder="enter your password again" />
+                </td>
+            </tr>
+            <tr>
+                <td style="color: darkcyan"><label for="gender">Gender</label></td>
+                <td style="color: darkcyan"><label for="hobbies">Hobbies</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" id="male" /><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" /><label for="female">Female</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="hobbies" id="music" /><label for="music">Music</label>
+                    <input type="checkbox" name="hobbies" id="sports" /><label for="sports">Sports</label>
+                    <input type="checkbox" name="hobbies" id="travel" /><label for="travel">Travel</label>
+                    <input type="checkbox" name="hobbies" id="movies" /><label for="movies">Movies</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: darkcyan">
+                    <label for="sincome">Source of Income</label>
+                </td>
+                <td style="color: darkcyan"><label for="income">Income</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="sincome" id="sincome">
+                        <option value="farmer">Farmer</option>
+                        <option value="manager">Manager</option>
+                        <option value="employed" selected>Employed</option>
+                        <option value="tracher">Teacher</option>
+                        <option value="businessman">businessman</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="range" name="income" id="income" min="0" max="20K" value="60" step="1" />20K
+                </td>
+            </tr>
+            <tr>
+                <td style="color: darkcyan">
+                    <label for="pic">Upload Profile Picture</label>
+                </td>
+                <td style="color: darkcyan"><label for="age">Age</label></td>
+            </tr>
+            <tr>
+                <td><input type="file" name="pic" id="pic" /></td>
+                <td><input type="number" name="age" id="age" value="18" /></td>
+            </tr>
+
+            <tr>
+                <td style="color: darkcyan" colspan="2"><label for="bio">Bio</label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="bio" id="bio" cols="68  " rows="5" ></textarea>
+                </td>
+            </tr>
+            <tr><td colspan="2" ><hr></td></tr>
+            <tr align="right">
+                <td colspan="2"><input type="submit" name="create" id="Create" value="Create" ></td>
+            </tr>
+        </table>
+        
+            
+    </form>
+</body>
+
+</html>
